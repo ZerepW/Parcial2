@@ -20,9 +20,9 @@
                     {{#each que.respuestas as |respuesta index|}}
                         {{#if index}}
 
-                            <span style="color:green">- {{respuesta.nombre}}<br></span>
-                        {{else}}
                             <span style="color:red">- {{respuesta.nombre}}<br></span>
+                        {{else}}
+                            <span style="color:green">- {{respuesta.nombre}}<br></span>
                         {{/if}}
                     {{/each}}
                     </div>

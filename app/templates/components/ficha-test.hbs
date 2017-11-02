@@ -6,6 +6,7 @@
         <sup><b>5</b> Preguntas || <b>Fecha</b> <i>{{test.fecha}}</i></sup><br>      
         <br>        
         {{#link-to 'examen' test.id}}<button style="cursor:pointer" type="button" class="btn btn-success"><i class="fa fa-paper-plane" aria-hidden="true"></i> Ver Examen</button>{{/link-to}}
+        <button {{action 'borrarTest'}} style="cursor:pointer" type="button" class="btn btn-danger"><i class="fa fa-paper-plane" aria-hidden="true"></i> Borrar</button>
         
     </div>
     </div>
