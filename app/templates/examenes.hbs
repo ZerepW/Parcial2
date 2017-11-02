@@ -1,0 +1,11 @@
+{{outlet}}
+
+
+<h2>Lista de Examenes</h2><br>
+<div class="row">
+    {{#each model.test as |test|}}
+        <div class="col col-lg-4 col-md-6 col-sm-12" style="margin:0px;">
+        {{ficha-test test=test}}
+        </div>
+    {{/each}}
+</div>

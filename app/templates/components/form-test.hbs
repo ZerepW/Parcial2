@@ -1,0 +1,35 @@
+<form {{action 'save' on='submit'}}>
+<h3>Test - {{test.nombre}}</h3>
+        Nombre
+        {{input type="text" class="form-control" value=test.nombre}}<br><br>
+
+        Fecha
+        {{input type="date" class="form-control" value=test.fecha}}<br><br>
+
+        <hr>
+
+        <h3>Preguntas</h3>
+            {{#each test.questions as |que|}}
+                {{#if que.isNew}}
+                    {{form-question question=que}}
+                {{else}}
+                    <div style="border-radius:5px; border:1px solid; padding:5px;">
+                    <b>Pregunta:</b> {{que.nombre}}<br>
+                    Respuestas: 
+                    
+                    {{#each que.respuestas as |respuesta index|}}
+                        {{#if index}}
+
+                            <span style="color:green">- {{respuesta.nombre}}<br></span>
+                        {{else}}
+                            <span style="color:red">- {{respuesta.nombre}}<br></span>
+                        {{/if}}
+                    {{/each}}
+                    </div>
+
+                {{/if}}
+            {{/each}}<br>
+            <button class="form-control btn btn-primary float-right" type="button" {{action 'saveQuestion'}}><i class="fa fa-plus-square" aria-hidden="true"></i> Agregar Pregunta</button><br><br><br>
+        <hr>
+        <button  class="form-control btn btn-success" >Guardar</button>
+</form>

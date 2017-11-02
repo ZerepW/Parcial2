@@ -1,5 +1,90 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<body>
+<nav class="navbar navbar-toggleable-md bg-warning">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+            <span class="navbar-toggler-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#paper-kit">APP EXAMENES</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="">{{#link-to 'examenes' class="nav-link" }}Examenes{{/link-to}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nuevotest">Nuevo Examen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<div id="main" class="container" >
+    {{outlet}}
+</div>
+<br>    
+<footer class="footer footer-black footer-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-center col-sm-3 col-xs-12">
+                        <h4>App Eventos</h4>
+                    </div>
+                    <div class="col-md-9 offset-md-1 col-sm-9 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <div class="links">
+                                    <ul class="uppercase-links stacked-links">
+                                        <li>
+                                            <a href="#paper-kit">
+                                                INICIO
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#paper-kit">
+                                                Nuevo Evento
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#paper-kit">
+                                                Participante
+                                            </a>
+                                        </li>
+                                    </ul>
 
-{{outlet}}
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="copyright">
+                            <div class="pull-left">
+                            </div>
+                            <div class="links pull-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Diseño de Aplicaciones Web
+                                        </a>
+                                    </li>
+                                    |
+                                    <li>
+                                        <a href="http://luisarturozerep.cloudapp.net">
+                                            Luis Arturo Pérez Díaz
+                                        </a>
+                                    </li>
+                                    |
+                                    <li>
+                                        <a href="#">
+                                            Beningno Hernández
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    
+</body>

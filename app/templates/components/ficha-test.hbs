@@ -1,0 +1,11 @@
+
+    <div class="card" style="width: 100%;" >
+    <img class="card-img-top" src="assets/img/sections/Examen.jpg" alt="Card image cap">
+    <div class="card-body">
+        <h4 class="card-title">{{test.nombre}}</h4>
+        <sup><b>5</b> Preguntas || <b>Fecha</b> <i>{{test.fecha}}</i></sup><br>      
+        <br>        
+        {{#link-to 'examen' test.id}}<button style="cursor:pointer" type="button" class="btn btn-success"><i class="fa fa-paper-plane" aria-hidden="true"></i> Ver Examen</button>{{/link-to}}
+        
+    </div>
+    </div>

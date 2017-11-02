@@ -1,0 +1,6 @@
+Pregunta
+{{input class="form-control" value=question.nombre}}<br>
+{{#each question.respuestas as |respuesta|}}
+    Respuesta
+    {{input class="form-control" value=respuesta.nombre}}<br>
+{{/each}}
