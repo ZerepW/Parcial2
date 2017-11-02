@@ -22,7 +22,7 @@ export default Ember.Component.extend({
             });
         },
         saveQuestion(){
-            //INICIA UNA NUEVA ACTIVIDAD
+            //INICIA UNA NUEVA Pregunta
             let question = this.get('store').createRecord('question',{
                 test: this.get('test')
             });
